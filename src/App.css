@@ -1,0 +1,165 @@
+.app {
+  /* height: 100%; */
+  margin: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: purple;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #555;
+}
+
+/* Sequence Grid */
+.sequence-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 20px auto;
+  width: fit-content;
+  background-color: #fafafa;
+}
+
+.sequence-grid {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.color-box.active {
+  border: 3px solid #444;
+}
+
+.color-box.used {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.next-color {
+  margin-top: 12px;
+}
+
+/* Buttons Grid */
+.buttons-grid {
+  display: grid;
+  gap: 15px;
+  margin: 20px auto;
+  max-width: 350px; /* base (mobile-first) */
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.color-button {
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.color-button:disabled {
+  cursor: not-allowed;
+}
+
+.color-button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+/* Reset Button */
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Progress Bar */
+.progress-container {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: purple;
+  transition: width 0.3s ease;
+}
+
+/* ------------------------
+   Responsive Breakpoints 
+------------------------- */
+
+/* sm: ≥640px */
+@media (min-width: 640px) {
+  .buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+  }
+}
+
+/* md: ≥768px */
+@media (min-width: 768px) {
+  .buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+  }
+}
+
+/* lg: ≥1024px */
+@media (min-width: 1024px) {
+  .buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 800px;
+  }
+}
+
+/* xl: ≥1280px */
+@media (min-width: 1280px) {
+  .buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
+/* 2xl: ≥1536px */
+@media (min-width: 1536px) {
+  .buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+  }
+}
