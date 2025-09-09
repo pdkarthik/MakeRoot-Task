@@ -15,13 +15,9 @@ This project demonstrates event-driven UI logic and state management in a fronte
   Users assign each of the nine buttons a color by clicking them. The current color to be assigned follows a fixed sequence (coral, teal, purple, orange, pink, blue, green, brown, indigo).
 
 - UI Components:
-
   - A displayed color palette showing the assignment order and current color.
-
   - A 3x3 grid of buttons (Button 1 to Button 9) available for color assignment.
-
   - "Reset Grid" button to clear assignments and restart the process.
-
   - Progress indicator showing how many of the nine colors have been assigned.
 
 - User Guidance:
@@ -35,12 +31,9 @@ This project demonstrates event-driven UI logic and state management in a fronte
 
 This project serves as a simple interactive demo for sequential UI state progression, suitable for showcasing basic React or JavaScript UI programming skills.
 
+
 🛠️ Tech Stack
-
-Frontend: React
-
-Styling: CSS
-
-Build Tool: Vite
-
-Deployment: Vercel
+- Frontend: React
+- Styling: CSS
+- Build Tool: Vite
+- Deployment: Vercel
